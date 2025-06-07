@@ -26,6 +26,8 @@ steps:
         "run", "deploy", "pod-grabber",
         "--source=.",
         "--region=europe-west2",
+        "--entry-point=check_podcast_feed",
+        "--runtime=python39",
         "--platform=managed",
         "--allow-unauthenticated"
       ]
