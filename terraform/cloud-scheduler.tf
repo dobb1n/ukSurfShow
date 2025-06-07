@@ -14,4 +14,5 @@ resource "google_cloud_scheduler_job" "trigger_pod_grabber" {
       "User-Agent"   = "terraform-scheduler"
     }
   }
+   depends_on = [google_project_service.cloud_scheduler]
 }
