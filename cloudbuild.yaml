@@ -20,10 +20,10 @@ steps:
 # Deploy Cloud Run Function from cf1/
   - name: gcr.io/cloud-builders/gcloud
     id: Deploy Cloud Run
-    dir: cf1
+    dir: cf1-checker
     args:
       [
-        "run", "deploy", "pod-collector",
+        "run", "deploy", "pod-grabber",
         "--source=.",
         "--region=europe-west2",
         "--platform=managed",
